@@ -94,6 +94,13 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-image: url("pages/Cart.jpg");
+    background-position-y: center;
+    background-position-x: 75px;
+    background-color: #9DE4F6;
+
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
