@@ -39,7 +39,7 @@ clearBtn.addEventListener('click', ()=> {
 })
  
 let counter = 0;
-let calc = document.querySelector('.calc')
+let calc = document.querySelector('.popup')
 let show = document.querySelector('.show')
 
 show.addEventListener('click', () => {
