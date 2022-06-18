@@ -379,3 +379,100 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+.abt{
+
+    background-image: url("/pages/About.jpeg");
+    padding: 80px;
+
+}
+
+.abtHeading{
+
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    font-size: 40px;
+}
+
+.abtSub{
+
+    text-align: center;
+    font-weight: 300;
+    color: white;  
+    font-size: 15px;
+    width: 40%;
+    margin: auto;
+
+}
+
+.abtLine{
+
+    width: 10%;
+    margin: 20px auto;
+    padding: 2px;
+    background-color: white;        
+
+}
+
+.abtDetails{
+
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-top: 40px;
+
+}
+
+.abtDetails div img {
+
+    width: 120px;
+    height: auto;
+
+}
+
+.abtHeading2 {
+
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    font-size: 40px;
+    color: rgb(66, 66, 66)
+
+}
+
+.abtSub2{
+
+    text-align: center;
+    font-weight: 300;
+    color: rgb(66, 66, 66);
+    font-size: 15px;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.abtImage2a{
+
+    width: 30%;
+    margin: auto;
+    padding: 180px;
+    background-image: url("IMG1.jpg");
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 8px 8px 16px rgb(186, 186, 186);
+
+}
+
+.abtImage2b{
+
+    width: 30%;
+    margin: auto;
+    padding: 180px;
+    background-image: url("IMG2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 8px 8px 16px rgb(186, 186, 186);
+
+}
