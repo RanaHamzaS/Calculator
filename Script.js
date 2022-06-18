@@ -38,3 +38,23 @@ clearBtn.addEventListener('click', ()=> {
     resultBox.innerHTML = "0";
 })
  
+let counter = 0;
+let calc = document.querySelector('.calc')
+let show = document.querySelector('.show')
+
+show.addEventListener('click', () => {
+
+  counter++;
+
+  if(counter % 2 == 0){
+
+    calc.style.opacity = 0;
+
+  }
+  else{
+
+    calc.style.opacity = 1;
+
+  }
+
+})
