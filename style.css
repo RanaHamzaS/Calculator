@@ -289,4 +289,50 @@ body {
 }
 .calc{
     transform:scale(0.7);
+    position: absolute;
+    right:    0;
+    bottom:   0;
+}
+
+@keyframes calcOpen {
+    
+    0% {
+
+        transform: scale(0);
+
+    }
+
+    100% {
+
+        transform: scale(1);        
+
+    }
+
+}
+@keyframes calcClose {
+    
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    100% {
+
+        transform: scale(0);        
+
+    }
+
+}
+
+.calcOpenC{
+
+    animation: calcOpen .5s;
+
+}
+
+.calcCloseC{
+
+    animation: calcClose .3s;
+
 }
