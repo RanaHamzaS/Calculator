@@ -458,7 +458,7 @@ body {
     width: 30%;
     margin: auto;
     padding: 180px;
-    background-image: url("IMG1.jpg");
+    background-image: url("/pages/IMG1.jpg");
     background-size: cover;
     background-position: bottom;
     box-shadow: 8px 8px 16px rgb(186, 186, 186);
@@ -470,7 +470,7 @@ body {
     width: 30%;
     margin: auto;
     padding: 180px;
-    background-image: url("IMG2.jpg");
+    background-image: url("/pages/IMG2.jpg");
     background-size: cover;
     background-position: bottom;
     box-shadow: 8px 8px 16px rgb(186, 186, 186);
