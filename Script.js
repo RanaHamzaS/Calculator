@@ -46,7 +46,7 @@ show.addEventListener('click', () => {
 
   counter++;
 
-  if(counter % 2 == 0){
+  if(counter % 2 != 0){
 
     calc.style.opacity = 0;
 
