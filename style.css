@@ -243,7 +243,18 @@ body {
     right:    0;
     bottom:   0;
     margin: 50px;
-    
+    cursor: pointer;
+    background-color: #3498db;
+    padding: 15px;
+    border-radius: 80px;
+    font-weight: 600;
+    color: #F7F7F7;
+}
+.show:hover{
+    transform:scale(1.1) ;
+    transition: .3s;
+
+
 }
 .popup{
 
@@ -251,7 +262,7 @@ body {
     position: absolute;
     right:    0;
     bottom:   0;
-    margin: 0px 70px 90px 0px;
+    display: none;
 }
 
 .total {
@@ -265,4 +276,7 @@ body {
 
     padding: 10px;
 
+}
+.calc{
+    transform:scale(0.7);
 }
