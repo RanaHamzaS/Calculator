@@ -75,7 +75,6 @@ let holder = document.querySelector('.productm');
 for (let index = 0; index < 10; index++) {
   
   holder.innerHTML+= `
-  <div class="productm">
       <div class="product">
           <img src="../pages/Cart.jpg" height="230px" width="200px">
           <br>
@@ -85,7 +84,6 @@ for (let index = 0; index < 10; index++) {
           <div style="font-weight: 600; color: green">
             ${Math.trunc(Math.random()*500)}Rs
           </div>
-      </div>
-  </div>`
+      </div>`
   
 }
