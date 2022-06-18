@@ -12,6 +12,7 @@ body{
 
 .logo{
     color: #FF7F00;
+    flex: 1;
     font-size: 32px;
     font-weight: bolder;
 }
@@ -57,6 +58,7 @@ a{
 
     border: 0;
     resize: none;
+    width: 100%;
     outline: none;
     background-color: transparent;
     color:white;
@@ -83,7 +85,7 @@ a{
     background-repeat: no-repeat;
     /* background-image: url("http://atlas-content-cdn.pixelsquid.com/stock-images/gold-icon-shopping-cart-4G3rGDF-600.jpg"); */
 
-    background-image: url("https://www.pngitem.com/pimgs/m/33-337386_gold-shopping-cart-png-transparent-png.png");
+    /* background-image: url("https://www.pngitem.com/pimgs/m/33-337386_gold-shopping-cart-png-transparent-png.png"); */
 }
 
 .main{

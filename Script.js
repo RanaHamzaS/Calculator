@@ -48,12 +48,12 @@ show.addEventListener('click', () => {
 
   if(counter % 2 != 0){
 
-    calc.style.opacity = 0;
+    calc.style.display = 'block';
 
   }
   else{
 
-    calc.style.opacity = 1;
+    calc.style.display = 'none';
 
   }
 
