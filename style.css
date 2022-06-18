@@ -249,7 +249,7 @@ body {
 }
 .show{
 
-    position: absolute;
+    position: fixed;
     right:    0;
     bottom:   0;
     margin: 50px;
@@ -259,6 +259,7 @@ body {
     border-radius: 80px;
     font-weight: 600;
     color: #F7F7F7;
+    
 }
 .show:hover{
     transform:scale(1.1) ;
@@ -269,7 +270,7 @@ body {
 .popup{
 
     padding: 20px;
-    position: absolute;
+    position: fixed;
     right:    0;
     bottom:   0;
     display: none;
@@ -335,4 +336,46 @@ body {
 
     animation: calcClose .3s;
 
+}
+.product{
+
+    height: 300px;
+    width: 200px;
+    border: 1px solid;
+    border-color: #dde1e7;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 20px;
+    transition: .2s;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    margin: auto;
+    margin-bottom: 40px;
+
+}
+.product:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+.pmain{
+    display: flex;
+    margin-top: 50px;
+    
+
+}
+.pside{
+    margin: 80px 200px 0px 0px;
+    font-weight: 800;
+    line-height: 80px;
+    
+}
+.productm{
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
