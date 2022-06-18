@@ -48,12 +48,21 @@ show.addEventListener('click', () => {
 
   if(counter % 2 != 0){
 
-    calc.style.display = 'block';
+    // calc.style.display = 'block';
+    // calc.style.transform = 'scale(1)';
+    calc.style.display = 'block'
+    calc.classList.add('calcOpenC')
+    calc.classList.remove('calcCloseC')
 
   }
   else{
 
-    calc.style.display = 'none';
+    // calc.style.transform = 'scale(0)';
+    calc.classList.add('calcCloseC')
+    calc.classList.remove('calcOpenC')
+    setTimeout(() => {
+      calc.style.display = 'none'
+    }, 300)
 
   }
 
