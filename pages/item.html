@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Max.</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <div class="iCover">
+    </div>
+    
+    <section class="iData">
+
+    <nav class="iHolder">
+
+        <div class="iImage">
+
+        </div>
+        
+        <div class="iCluster">
+            <div class="iText">
+                
+            </div>
+            <div class="iDesc">
+
+            </div>
+            <div class="iRating">
+
+            </div>
+            <div class="iPrice">
+
+            </div>
+            <div style="display:flex;">
+                <div class="iGift">
+                    Buy As A Gift!
+                </div>
+                <div class="iCart">
+                    Add To Cart!
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    </section>
+
+    <script>
+
+        let item = document.querySelector('.item');        
+        console.log(JSON.parse(localStorage.getItem("ITEM")))
+
+        let data = JSON.parse(localStorage.getItem("ITEM"))
+
+        document.querySelector('.iCover').style.backgroundImage = `url('${data.thumbnail}')`
+        document.querySelector('.iImage').style.backgroundImage = `url('${data.images[2]}')`
+        document.querySelector('.iText').innerHTML = data.title
+        document.querySelector('.iDesc').innerHTML = data.description
+        document.querySelector('.iRating').innerHTML = (
+              data.rating >= 4.7 ? '⭐⭐⭐⭐⭐' : 
+              data.rating >= 4.5 ? '⭐⭐⭐⭐' : 
+              data.rating >= 4.3 ? '⭐⭐⭐' :
+              data.rating >= 4.2 ? '⭐⭐' : 
+              data.rating >= 4.1 ? '⭐' : '❌'
+            )
+        document.querySelector('.iPrice').innerHTML = data.price + ' USD/-'
+
+    </script>
+
+</body>
+</html>
