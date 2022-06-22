@@ -71,19 +71,48 @@ show.addEventListener('click', () => {
 // Product Listings...
 
 let holder = document.querySelector('.productm');
+let items = null;
 
-for (let index = 0; index < 10; index++) {
-  
-  holder.innerHTML+= `
-      <div class="product">
-          <img src="../pages/Cart.jpg" height="230px" width="200px">
-          <br>
-          <div style="font-weight: 600; color: black">
-            The Product ${index+1}
-          </div>
-          <div style="font-weight: 600; color: green">
-            ${Math.trunc(Math.random()*500)}Rs
-          </div>
-      </div>`
-  
-}
+fetch('https://dummyjson.com/products').then(res=>res.json()).then(json=>{
+
+    console.log(json.products)
+    holder.innerHTML = '';
+    for (let index = 0; index < json.products.length; index++) {
+
+      holder.innerHTML+= `
+          <div class="product"
+           accessKey=${json.products[index].id}
+            style="overflow: hidden">
+
+              <div accessKey=${json.products[index].id}
+              style="border-radius: 20px; background-position: center; background-image: url(${json.products[index].thumbnail || 'N/A'}); padding: 80px; background-size: cover"></div>
+              <div accessKey=${json.products[index].id}
+               style="font-weight: 600; color: black">
+                ${json.products[index].title || 'N/A'}
+              </div>
+              <div accessKey=${json.products[index].id}>${
+              json.products[index].rating >= 4.7 ? '⭐⭐⭐⭐⭐' : 
+              json.products[index].rating >= 4.5 ? '⭐⭐⭐⭐' : 
+              json.products[index].rating >= 4.3 ? '⭐⭐⭐' :
+              json.products[index].rating >= 4.2 ? '⭐⭐' : 
+              json.products[index].rating >= 4.1 ? '⭐' : '❌'
+            }</div>
+              <div style="font-weight: 600; color: green" accessKey=${json.products[index].id}>
+                ${json.products[index].price || 'N/A'} USD/-
+              </div>
+          </div>`;
+      
+    }
+    items = json.products;
+})
+
+document.addEventListener('click', (e) => {
+
+  e.target.accessKey ? (
+      localStorage.setItem('ID', e.target.accessKey),
+      localStorage.setItem('ITEM', JSON.stringify(items[Number(e.target.accessKey)-1])),
+      location.href = '/pages/item.html'
+    
+    ) : (null);
+
+})

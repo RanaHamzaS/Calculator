@@ -352,6 +352,7 @@ body {
     transition-timing-function: ease;
     margin: auto;
     margin-bottom: 40px;
+    background-color: white;
 
 }
 .product:hover{
@@ -486,5 +487,123 @@ body {
     margin-bottom: 18px;
     text-align: center;
     padding: 10px 4px 10px 4px;
+
+}
+
+/* Item Styles */
+
+.iCover{
+
+    padding: 250px;
+    background-size: cover;
+    color: white;
+    filter: blur(8px);
+    
+}
+
+.iImage{
+
+    padding: 160px;
+    width: 8%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.iData{
+
+    position: absolute;
+    top: 0;
+
+}
+
+.iHolder{
+
+    margin: 20% 0px 0px 80px;
+    display: flex;
+    color: white;
+    background-color: rgb(176, 237, 255, 0.4);
+
+}
+
+.iCluster{
+
+    text-align: right;
+    padding-left: 160px;
+
+}
+
+.iText{
+
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 20px;
+
+}
+
+.iDesc{
+
+    font-weight: 400;
+    font-style: italic;
+    width: 70%;
+    margin-left:auto;
+
+    
+}
+
+.iRating{
+
+    font-size: 64px;
+
+}
+
+.iPrice{
+
+    font-size: 54px;
+    color: rgb(0, 172, 0);
+    font-weight: 800;
+
+}
+
+.iCart{
+
+    flex: 1;
+    background-color: #158901d5;
+    width: fit-content;
+    margin: auto 20px 10px auto;
+    padding: 12px;
+    border-radius: 12px;
+    transition: .3s;
+    background-image: url("/pages/cartVec.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.iCart:hover{
+
+    background-color: #1fcc00d5;
+    transform: scale(1.1);
+    transition: .3s;
+    background-position-x: right;
+    color:#1fcc00d5 ;
+}
+
+.iGift{
+
+    background-color: #620189d5;
+    width: fit-content;
+    margin: auto 20px 10px auto;
+    padding: 12px;
+    border-radius: 12px;
+    transition: .3s;
+
+}
+
+.iGift:hover{
+
+    background-color: #9200ccd5;
+    transform: scale(1.1);
+    transition: .3s;
 
 }
