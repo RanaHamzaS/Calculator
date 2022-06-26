@@ -21,15 +21,65 @@
         color: white;
         font-size:40px;
         text-align: center;
-        padding-top: 120px;
+        padding-top: 160px;
         font-weight: 800;
         }
         .sub-quote{
-            font-size: 22px;
+            font-size: 24px;
             margin-top: 20px;
             font-weight: 400;
 
-        }   
+        }
+
+        .box-one{    
+        font-size: 20px;
+        padding: 100px  100PX 100PX 100PX; 
+        margin-right: 10px;
+        margin-left: 220px;
+        text-align: center;
+        background-color: white 
+        } 
+        
+        .box-two{
+        background-color: white;
+        padding: 100px  100PX 100PX 100PX; 
+        font-size: 20px;
+        text-align: center;
+            }
+
+        .con-button{
+        align-items: center;
+        background-color:#1E6AE1 ;
+        margin-left: 100px;
+        color: white;
+        display: block;
+        width: 50%;
+        border:none;
+        padding: 14px 28px;
+        font-size: 16px;
+        box-shadow:2px 2px #555;
+        cursor: pointer;
+        text-align: center
+         }
+
+        .flex-class{
+            display: flex;
+        }
+
+        .header{
+                color:#555;
+        }
+
+        .form-initial{
+        margin-top: 40px;
+        margin-left: 60px;
+        text-align: center;
+       }
+       .form-contents{
+       padding-left: 200px;
+       font-size: 30px;
+       }
+
 </style>
     
 
@@ -71,8 +121,51 @@
     </div>
 </div>
 
-<section class="box-one">
-  <img src="phone.svg" alt="phone" width="100px" height="auto">
-</section>    
+<section class="flex-class">
+    <section class="box-one">
+        <img src="../pages/phone.png" width="100px" height="100px" > 
+    <h1 class="header">24/7 Customer Support</h1>
+    Have any questions?just pick up the phone <br>and call us <br>
+    <br>
+    <button class="con-button">
+        CALL US
+    </button>
+</section>
+
+    <div class="box-two">
+        <img src="../pages/letter.png" width="150px" height="100px">
+       <h1 class="header">social media handles</h1>
+        Sometimes you need a little help. Dont worry, <br> Were here for you. <br>
+    <br>
+       <button class="con-button">
+        SEND MESSAGE
+       </button>
+    </div>
+  
+</section>
+
+<div class="form-initial">
+<h3>Ask a question/Submit a complaint</h3> <br>
+    </div>
+
+    <div class="form-contents">
+       Your name <br>
+       <input type="text">
+    </div>
+
+    <div class="form-contents">
+        Your E-Mail <br>
+        <input type="text">
+    </div>
+
+    <div class="form-contents">
+        Subject <br>
+        <input type="text">
+    </div>
+
+    <div class="form-contents">
+        Your messgae <br>
+        <input type="text">
+    </div>
 </body>
 </html>
